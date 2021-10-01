@@ -15,7 +15,7 @@ module "vpc" {
     public-ru-central1-b  = { zone = "ru-central1-b", cidr = "10.0.16.0/20" },
     public-ru-central1-c  = { zone = "ru-central1-c", cidr = "10.0.32.0/20" },
 
-    // Private subnets with internal IP addresses and NAT Gateway (Have Internet access).
+    // Private subnets have Internet access through NAT.
     private-a-ru-central1-a = { zone = "ru-central1-a", cidr = "10.0.48.0/20" },
     private-a-ru-central1-b = { zone = "ru-central1-b", cidr = "10.0.48.0/20" },
     private-a-ru-central1-c = { zone = "ru-central1-c", cidr = "10.0.48.0/20" },
