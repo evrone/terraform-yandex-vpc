@@ -1,5 +1,7 @@
 resource "yandex_vpc_network" "vpc" {
   name = var.name
+
+  labels = var.labels
 }
 
 resource "yandex_vpc_subnet" "vpc_subnets" {
